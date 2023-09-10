@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vernibhu</title>
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+
+    <!-- CSS -->
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
@@ -12,7 +17,7 @@
       <input type="checkbox" id="nav-check" />
       <div class="nav-header">
         <div class="nav-title">
-          <img src="./assets/Logo.png" alt="">
+          <img src="./assets/Logo.png" alt="" />
         </div>
       </div>
       <div class="nav-btn">
@@ -23,32 +28,216 @@
         </label>
       </div>
       <div class="nav-links">
-      <a href="#">Events</a>
-      <a href="#">About</a>
-      <a href="#">Contact</a>
-      <a href="#">+91-8999767923</a>
+        <a href="#">Events</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <a href="#">+91-8999767923</a>
       </div>
     </div>
     <!-- NavBar Ends -->
 
     <!-- Hero Section Starts -->
-    <section id="hero"></section>
+    <section id="hero">
+      <div class="hero_banner">
+        <img src="./assets/hero_banner.png" alt="" />
+        <div class="book_btn">
+          <span>early bird tickets</span>
+          <span
+            >live now
+            <img src="./assets/bbok_my_show.png" alt="book my show icon"
+          /></span>
+        </div>
+      </div>
+    </section>
     <!-- Hero Section Ends -->
 
     <!-- Events Title Section Starts -->
-    <section id="event_title"></section>
+    <section id="event_title">
+      <video autoplay muted loop id="banner_video">
+        <source
+          src="./assets/Sunburn Final-Banner-new-sb2.mp4"
+          type="video/mp4"
+        />
+        Your browser does not support HTML5 video.
+      </video>
+      <div class="title">"Every Events Matters"</div>
+    </section>
     <!-- Events Title Section Ends -->
 
     <!-- Events Section Starts -->
-    <section id="events"></section>
+    <section id="events">
+      <div class="title">Events</div>
+      <div class="events_description">
+        <div class="card_container">
+          <div class="card">
+            <div class="logo">
+              <img src="./assets/events_icons/sound.png" alt="sound" />
+            </div>
+            <div class="title">Sound</div>
+          </div>
+          <div class="card">
+            <div class="logo">
+              <img src="./assets/events_icons/light.png" alt="light" />
+            </div>
+            <div class="title">Light</div>
+          </div>
+          <div class="card">
+            <div class="logo">
+              <img
+                src="./assets/events_icons/video-camera.png"
+                alt="video camera"
+              />
+            </div>
+            <div class="title">Audiovisual</div>
+          </div>
+        </div>
+      </div>
+      <!-- Carosel Starts -->
+      <div class="slide-container swiper">
+        <div class="slide-content">
+          <div class="card-wrapper swiper-wrapper">
+            <div class="card swiper-slide">
+              <img src="./assets/carousel/weeding.png" alt="" />
+              <div class="overlay"></div>
+              <div class="title">
+                <span>weeding wonders</span>
+              </div>
+            </div>
+            <div class="card swiper-slide">
+              <img src="./assets/carousel/corporate.png" alt="" />
+              <div class="overlay"></div>
+              <div class="title">
+                <span>CORPORATE EXCELLENCE</span>
+              </div>
+            </div>
+            <div class="card swiper-slide">
+              <img src="./assets/carousel/celebrations.png" alt="" />
+              <div class="overlay"></div>
+              <div class="title">
+                <span>CELEBRATIONS GALORE</span>
+              </div>
+            </div>
+            <div class="card swiper-slide">
+              <img src="./assets/carousel/social.png" alt="" />
+              <div class="overlay"></div>
+              <div class="title">
+                <span>SOCIAL PARTIES</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="swiper-button-next swiper-navBtn"></div> -->
+        <!-- <div class="swiper-button-prev swiper-navBtn"></div> -->
+        <!-- <div class="swiper-pagination"></div> -->
+      </div>
+      <!-- Carosel Ends -->
+    </section>
     <!-- Events Section Ends -->
 
+    <!-- About Section Starts -->
+    <section id="about">
+      <div class="title">About Varnibhu</div>
+      <div class="description">
+        <span>
+          As a premier event management company based in Pune, we specialize in
+          curating extraordinary experiences that reflect your unique style.
+          Founded with a passion for creativity and a zeal for perfection,
+          Varnibhu has evolved into a dynamic force in the event management
+          industry. The meaning of Varnibhu is, be changed into an articulate
+          sound.</span
+        >
+        <span
+          >Our journey began with the belief that every event is a canvas
+          waiting to be painted with innovation, elegance, and meticulous
+          attention to detail. With Pune's vibrant backdrop inspiring us, we
+          embarked on a mission to bring exceptional events to life.</span
+        >
+      </div>
+    </section>
+    <!-- About Section Ends -->
+
+    <!-- Connect Section Starts -->
+    <section id="connect">
+      <div class="card">
+        <div class="title">LET’S TRANSFORM YOUR EVENTS</div>
+        <div class="desc">
+          Connect with us to discuss how we can transform your special occasion.
+        </div>
+        <div class="button">call now</div>
+      </div>
+    </section>
+    <!-- Connect Section Ends -->
+
     <!-- Conatct Section Starts -->
-    <section id="contact"></section>
+    <section id="contact">
+      <div class="contact_form">
+        <div class="title">
+          <h1>Get in Touch</h1>
+          <span>We'd love to hear from you!</span>
+        </div>
+        <div class="form">
+          <div class="item">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              value=""
+              placeholder="Enter your name"
+            />
+          </div>
+          <div class="item">
+            <label for="email">Email</label>
+            <input
+              type="text"
+              name="email"
+              id="email"
+              value=""
+              placeholder="Enter your email address"
+            />
+          </div>
+          <div class="item">
+            <label for="message">Message</label>
+            <textarea
+              cols="4"
+              type="text"
+              resize="false"
+              name="message"
+              id="message"
+              placeholder="Enter your message"
+            ></textarea>
+          </div>
+          <div id="sendBtn" class="button">send</div>
+        </div>
+      </div>
+      <div class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3784.955374418692!2d73.8866047!3d18.4403352!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2eb001ca65529%3A0xaf7290d3cb207ddb!2sCeratec%20City!5e0!3m2!1sen!2sin!4v1694365585586!5m2!1sen!2sin"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </section>
     <!-- Conatct Section Ends -->
 
     <!-- Footer Section Starts -->
     <footer></footer>
     <!-- Footer Section Ends -->
+
+    <!-- Swiper JS -->
+    <script src="./js/carousel/swiper-bundle.min.js"></script>
+
+    <!-- Carousel JavaScript -->
+    <script src="./js/carousel/carousel.js"></script>
+
+    <!--  -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+    <!-- Javascript -->
+    <script src="./js/app.js"></script>
   </body>
 </html>
