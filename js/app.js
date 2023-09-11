@@ -1,7 +1,5 @@
 const sendBtn = document
   .getElementById("sendBtn")
-  .addEventListener("click", () => {
-
-  });
+  .addEventListener("click", () => {});
 
 function sendEmail() {}

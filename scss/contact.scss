@@ -1,0 +1,242 @@
+@font-face {
+  font-family: footLightMTLight;
+  src: url("../fonts/FootlightMTLight.ttf");
+}
+
+$primary-color: #010101;
+$secondary-color: #f15a29;
+$white-color: #ffffff;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: footLightMTLight;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+.nav {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background-color: $primary-color;
+  position: relative;
+}
+
+.nav > .nav-header {
+  display: flex;
+  align-items: center;
+}
+
+.nav > .nav-header > .nav-title {
+  display: inline-block;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav > .nav-btn {
+  display: none;
+}
+
+.nav > .nav-links {
+  margin-right: 40px;
+}
+
+.nav > .nav-links > a {
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #efefef;
+}
+
+.nav > .nav-links > a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.nav > #nav-check {
+  display: none;
+}
+
+#hero_banner {
+  max-width: 100vw;
+  height: calc(100vh - 80px);
+  overflow: hidden;
+  position: relative;
+  background: url("../assets/events_banner.jpeg") no-repeat center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  .heading {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 30px;
+    h1 {
+      font-size: clamp(12px, 50vw, 40px);
+      margin-bottom: 20px;
+    }
+    span {
+      font-size: clamp(12px, 50vw, 18px);
+      color: rgba(0, 0, 0, 0.5);
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: clamp(12px, 50vw, 18px);
+      width: 50%;
+      text-align: center;
+    }
+  }
+}
+
+#contact_form {
+  width: 100vw;
+  height: 150vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  .title {
+  }
+  .form {
+    height: 80%;
+    width: 80%;
+    margin: 0 auto;
+    // background-color: #333;
+    .item {
+      // background-color: #fdbb2d;
+      width: 100%;
+      height: 20%;
+      display: flex;
+      align-items: center;
+      // justify-content: space-around;
+      justify-content: center;
+      label {
+        width: 20%;
+      }
+      input,
+      textarea {
+        width: 50%;
+        border: none;
+        border-radius: 4px;
+        border: 1px solid #ccc;
+        outline: none;
+      }
+      input {
+        height: 30px;
+      }
+      textarea {
+        height: 80px;
+        resize: none;
+      }
+      input::placeholder {
+        color: rgba(0, 0, 0, 0.5);
+        padding-left: 10px;
+      }
+
+      textarea::placeholder {
+        color: rgba(0, 0, 0, 0.5);
+        padding: 30px 10px;
+      }
+    }
+    .button {
+      background-color: $primary-color;
+      color: $white-color;
+      width: 150px;
+      height: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-transform: uppercase;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+  }
+  .about_us {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 30px;
+    h5 {
+      font-size: clamp(12px, 40vw, 40px);
+    }
+    p {
+      font-size: clamp(12px, 10vw, 20px);
+    }
+  }
+}
+
+#navigation {
+  width: 100vw;
+  height: auto;
+  margin-top: 50px;
+  .navigation_container {
+    width: 90%;
+    margin: 0 auto;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    h1{
+        font-style: normal;
+font-weight: 300;
+    }
+    .direction {
+      border-radius: 3.511px;
+      border: 0.878px solid #010101;
+      cursor: pointer;
+    }
+  }
+  .map{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    iframe{
+        width: 90%;
+        margin: 0 auto;
+    }
+  }
+}
+
+footer {
+  width: 100vw;
+  height: 30vh;
+  background-color: $primary-color;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  .icons {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .item {
+      padding: 0 10px;
+      cursor: pointer;
+    }
+  }
+  p {
+    color: $white-color;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+}
