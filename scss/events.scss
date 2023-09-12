@@ -46,6 +46,7 @@ $white-color: #ffffff;
 
 .nav > .nav-links {
   margin-right: 40px;
+  z-index: 999;
 }
 
 .nav > .nav-links > a {
@@ -312,6 +313,7 @@ footer {
     overflow-y: hidden;
     top: 50px;
     left: 0px;
+    z-index: 9999;
   }
   .nav > .nav-links > a {
     display: block;
@@ -319,10 +321,12 @@ footer {
   }
   .nav > #nav-check:not(:checked) ~ .nav-links {
     height: 0px;
+    z-index: 9;
   }
   .nav > #nav-check:checked ~ .nav-links {
     height: calc(100vh - 50px);
     overflow-y: auto;
+    z-index: 9;
   }
 
   #portfolio .container img {
