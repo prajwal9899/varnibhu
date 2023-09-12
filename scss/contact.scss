@@ -143,23 +143,22 @@ $white-color: #ffffff;
         color: rgba(0, 0, 0, 0.5);
         padding-left: 10px;
       }
-
       textarea::placeholder {
         color: rgba(0, 0, 0, 0.5);
         padding: 30px 10px;
       }
-    }
-    .button {
-      background-color: $primary-color;
-      color: $white-color;
-      width: 150px;
-      height: 30px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-transform: uppercase;
-      border-radius: 6px;
-      cursor: pointer;
+      .button {
+        background-color: $primary-color;
+        color: $white-color;
+        width: 150px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-transform: uppercase;
+        border-radius: 6px;
+        cursor: pointer;
+      }
     }
   }
   .about_us {
@@ -190,9 +189,9 @@ $white-color: #ffffff;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    h1{
-        font-style: normal;
-font-weight: 300;
+    h1 {
+      font-style: normal;
+      font-weight: 300;
     }
     .direction {
       border-radius: 3.511px;
@@ -200,15 +199,15 @@ font-weight: 300;
       cursor: pointer;
     }
   }
-  .map{
+  .map {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 50px;
-    iframe{
-        width: 90%;
-        margin: 0 auto;
+    iframe {
+      width: 90%;
+      margin: 0 auto;
     }
   }
 }
