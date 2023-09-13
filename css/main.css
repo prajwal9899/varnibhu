@@ -119,7 +119,7 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  aspect-ratio: 8/2;
+  aspect-ratio: 8/3;
 }
 #event_title #banner_video {
   position: absolute;
