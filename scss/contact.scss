@@ -106,20 +106,21 @@ $white-color: #ffffff;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  margin-top: 50px;
   .title {
+    h1 {
+      margin-bottom: 20px;
+    }
   }
   .form {
-    height: 80%;
+    height: 60%;
     width: 80%;
     margin: 0 auto;
-    // background-color: #333;
     .item {
-      // background-color: #fdbb2d;
       width: 100%;
       height: 20%;
       display: flex;
       align-items: center;
-      // justify-content: space-around;
       justify-content: center;
       label {
         width: 20%;
@@ -133,10 +134,10 @@ $white-color: #ffffff;
         outline: none;
       }
       input {
-        height: 30px;
+        height: 50px;
       }
       textarea {
-        height: 80px;
+        height: 120px;
         resize: none;
       }
       input::placeholder {
@@ -171,9 +172,45 @@ $white-color: #ffffff;
     line-height: 30px;
     h5 {
       font-size: clamp(12px, 40vw, 40px);
+      margin-bottom: 20px;
     }
     p {
       font-size: clamp(12px, 10vw, 20px);
+      margin-bottom: 30px;
+    }
+  }
+  .contact_options {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    .item {
+      width: 30%;
+      display: flex;
+      align-items: center;
+      margin-top: 30px;
+      .icon {
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.2);
+        img {
+          width: 40%;
+          aspect-ratio: 1/1.2;
+        }
+      }
+      .info {
+        width: 40%;
+        height: 100%;
+        display: flex;
+        margin-left: 20px;
+        justify-content: center;
+        flex-direction: column;
+      }
     }
   }
 }
@@ -197,6 +234,11 @@ $white-color: #ffffff;
       border-radius: 3.511px;
       border: 0.878px solid #010101;
       cursor: pointer;
+      height: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 130px;
     }
   }
   .map {
@@ -205,6 +247,7 @@ $white-color: #ffffff;
     align-items: center;
     justify-content: center;
     margin-top: 50px;
+    margin-bottom: 50px;
     iframe {
       width: 90%;
       margin: 0 auto;
@@ -239,7 +282,6 @@ footer {
     text-align: center;
   }
 }
-
 
 @media (max-width: 700px) {
   .nav > .nav-btn {
@@ -304,5 +346,21 @@ footer {
   }
   .swiper-navBtn {
     display: none;
+  }
+
+  #contact_form {
+    margin-top: 40px;
+    .form {
+      width: 100%;
+    }
+    .about_us {
+      width: 90%;
+    }
+    .contact_options {
+      width: 90%;
+      .item{
+        width: 100%;
+      }
+    }
   }
 }

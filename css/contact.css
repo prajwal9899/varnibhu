@@ -101,9 +101,13 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  margin-top: 50px;
+}
+#contact_form .title h1 {
+  margin-bottom: 20px;
 }
 #contact_form .form {
-  height: 80%;
+  height: 60%;
   width: 80%;
   margin: 0 auto;
 }
@@ -126,10 +130,10 @@
   outline: none;
 }
 #contact_form .form .item input {
-  height: 30px;
+  height: 50px;
 }
 #contact_form .form .item textarea {
-  height: 80px;
+  height: 120px;
   resize: none;
 }
 #contact_form .form .item input::-moz-placeholder {
@@ -171,9 +175,45 @@
 }
 #contact_form .about_us h5 {
   font-size: clamp(12px, 40vw, 40px);
+  margin-bottom: 20px;
 }
 #contact_form .about_us p {
   font-size: clamp(12px, 10vw, 20px);
+  margin-bottom: 30px;
+}
+#contact_form .contact_options {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+#contact_form .contact_options .item {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+#contact_form .contact_options .item .icon {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+#contact_form .contact_options .item .icon img {
+  width: 40%;
+  aspect-ratio: 1/1.2;
+}
+#contact_form .contact_options .item .info {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  margin-left: 20px;
+  justify-content: center;
+  flex-direction: column;
 }
 
 #navigation {
@@ -197,6 +237,11 @@
   border-radius: 3.511px;
   border: 0.878px solid #010101;
   cursor: pointer;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 130px;
 }
 #navigation .map {
   width: 100%;
@@ -204,6 +249,7 @@
   align-items: center;
   justify-content: center;
   margin-top: 50px;
+  margin-bottom: 50px;
 }
 #navigation .map iframe {
   width: 90%;
@@ -299,5 +345,20 @@ footer p {
   }
   .swiper-navBtn {
     display: none;
+  }
+  #contact_form {
+    margin-top: 40px;
+  }
+  #contact_form .form {
+    width: 100%;
+  }
+  #contact_form .about_us {
+    width: 90%;
+  }
+  #contact_form .contact_options {
+    width: 90%;
+  }
+  #contact_form .contact_options .item {
+    width: 100%;
   }
 }
