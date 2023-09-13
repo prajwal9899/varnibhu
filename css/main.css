@@ -143,7 +143,6 @@
 
 #events {
   width: 100vw;
-  height: 170vh;
   background-color: #333;
   background: url("../assets/events_banner.jpeg") no-repeat center;
   background-size: cover;
