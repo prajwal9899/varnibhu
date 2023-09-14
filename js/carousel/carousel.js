@@ -15,7 +15,7 @@ var swiper = new Swiper(".slide-content", {
       prevEl: ".swiper-button-prev",
     },
     autoplay: {
-      delay: 3000,
+      delay: 1000,
     },
 
     breakpoints:{
