@@ -162,6 +162,7 @@ $white-color: #ffffff;
 .banner {
   max-width: 90vw;
   margin: 0 auto;
+  margin-top: 50px;
   height: 300px;
   overflow: hidden;
   position: relative;
@@ -174,7 +175,7 @@ $white-color: #ffffff;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  height: 300px;
+  height: 250px;
   text-align: center;
   line-height: 30px;
   width: 80vw;
@@ -344,4 +345,8 @@ footer {
   .swiper-navBtn {
     display: none;
   }
+}
+
+@media screen and (max-width: 480px) {
+  
 }

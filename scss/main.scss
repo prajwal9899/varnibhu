@@ -70,7 +70,7 @@ $white-color: #ffffff;
   position: relative;
   background: url("../assets/hero_banner_blur.png") no-repeat center;
   background-size: cover;
-  aspect-ratio: 1/0.4;
+  aspect-ratio: 1/0.41;
   .hero_banner {
     width: 80%;
     margin: 0 auto;
@@ -353,6 +353,7 @@ $white-color: #ffffff;
     .title {
       // margin: 50px 0;
       text-align: center;
+      line-height: 35px;
     }
     .form {
       height: 80%;
@@ -558,3 +559,14 @@ padding: 30px 0;
   background-color: #010101;
 }
 
+
+
+
+
+
+
+@media screen and (max-width: 480px) {
+  #hero{
+  aspect-ratio: 1/0.7;
+  }
+}
