@@ -165,8 +165,7 @@
   width: 100%;
   text-align: center;
   font-size: 70px;
-  padding-top: 70px;
-  padding-bottom: 50px;
+  padding-top: 30px;
 }
 #events .events_description {
   width: 100vw;
@@ -366,67 +365,75 @@
 
 #contact {
   width: 100vw;
-  height: 70vh;
+  height: 100vh;
+}
+#contact .contact_details {
+  width: 100vw;
+  height: 70%;
+  display: flex;
+  flex-wrap: wrap;
+}
+#contact .contact_details .contact_info {
+  width: 50%;
+  height: 100%;
+  padding: 50px 100px;
+}
+#contact .contact_details .contact_info h6 {
+  font-size: 16px;
+  color: #f15a29;
+}
+#contact .contact_details .contact_info h1 {
+  padding: 20px 0px;
+}
+#contact .contact_details .contact_info .address {
+  width: 40%;
+  line-height: 20px;
+}
+#contact .contact_details .contact_info .email {
+  padding: 10px 0;
+  cursor: pointer;
+}
+#contact .contact_details .contact_info .phone {
+  cursor: pointer;
+}
+#contact .contact_details .contact_form {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#contact .contact_details .contact_form .row {
+  height: 20%;
+  width: 60%;
   display: flex;
 }
-#contact .contact_form {
-  flex: 1;
+#contact .contact_details .contact_form .row:nth-child(1) input {
+  width: 90%;
+}
+#contact .contact_details .contact_form .row .col {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-#contact .contact_form .title {
-  text-align: center;
-  line-height: 35px;
-}
-#contact .contact_form .form {
-  height: 80%;
-  width: 80%;
-  margin: 0 auto;
-}
-#contact .contact_form .form .item {
   width: 100%;
-  height: 20%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
-#contact .contact_form .form .item label {
-  width: 20%;
+#contact .contact_details .contact_form input {
+  padding: 10px 0px;
 }
-#contact .contact_form .form .item input,
-#contact .contact_form .form .item textarea {
-  width: 50%;
+#contact .contact_details .contact_form textarea {
+  height: 90px;
+}
+#contact .contact_details .contact_form input,
+#contact .contact_details .contact_form textarea {
   border: none;
-  border-radius: 4px;
-  border: 1px solid #ccc;
+  background-color: transparent;
+  border-bottom: 2px solid #010101;
   outline: none;
 }
-#contact .contact_form .form .item input {
-  height: 30px;
+#contact .contact_details .contact_form label {
+  margin-bottom: 10px;
 }
-#contact .contact_form .form .item textarea {
-  height: 80px;
-  resize: none;
-}
-#contact .contact_form .form .item input::-moz-placeholder {
-  color: rgba(0, 0, 0, 0.5);
-  padding-left: 10px;
-}
-#contact .contact_form .form .item input::placeholder {
-  color: rgba(0, 0, 0, 0.5);
-  padding-left: 10px;
-}
-#contact .contact_form .form .item textarea::-moz-placeholder {
-  color: rgba(0, 0, 0, 0.5);
-  padding: 30px 10px;
-}
-#contact .contact_form .form .item textarea::placeholder {
-  color: rgba(0, 0, 0, 0.5);
-  padding: 30px 10px;
-}
-#contact .contact_form .form .button {
+#contact .contact_details .contact_form .button {
   background-color: #010101;
   color: #ffffff;
   width: 150px;
@@ -437,22 +444,21 @@
   text-transform: uppercase;
   border-radius: 6px;
   cursor: pointer;
+  margin-top: 30px;
 }
-#contact .contact_form .form .button:hover {
+#contact .contact_details .contact_form .button:hover {
   color: #010101;
   background-color: #ffffff;
   border: 1px solid #010101;
   transition: 0.2s ease-in-out;
 }
-#contact .map {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+#contact .map_container {
+  width: 100vw;
+  height: 30%;
 }
-#contact .map iframe {
-  height: 80%;
-  width: 80%;
+#contact .map_container iframe {
+  height: 100%;
+  width: 100%;
 }
 
 footer {
@@ -542,13 +548,9 @@ footer p {
     flex-direction: column;
     height: 120vh;
   }
-  #contact .contact_form {
-    margin-top: 50px;
-  }
-  #contact .contact_form .form {
-    height: 400px;
-    width: 100%;
-    margin: 0 auto;
+  #contact .contact_details {
+    flex-direction: column;
+    height: auto;
   }
 }
 .swiper-navBtn {
@@ -593,5 +595,8 @@ footer p {
 @media screen and (max-width: 480px) {
   #hero {
     aspect-ratio: 1/0.7;
+  }
+  #contact .contact_details {
+    flex-direction: column;
   }
 }
