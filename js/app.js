@@ -21,3 +21,13 @@ document.getElementById("home_links4").addEventListener("click", (event) => {
     document.getElementById("nav-check").checked = false;
   }
 });
+
+const sendBtn = document
+  .getElementById("sendBtn")
+  .addEventListener("click", () => {
+    let dispaly = document.getElementById("response");
+    dispaly.innerHTML = "Thanks for submitting";
+    setTimeout(() => {
+      dispaly.innerHTML = "";
+    }, 4000);
+  });
