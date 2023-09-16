@@ -35,12 +35,13 @@ const sendBtn = document
     emailjs.init("vbFsDRgAQuM2igArp");
     var templateParams = {
       name: `${name} ${last_name}`,
-      email: email,
+      user_email: email,
       message: message,
     };
 
     emailjs.send("service_varnibhu", "template_qp5mg9i", templateParams).then(
       function (response) {
+        console.log(response);
         console.log("SUCCESS!", response.status, response.text);
         dispaly.innerHTML = "Thanks for submitting";
         document.getElementById("name").value = ""
