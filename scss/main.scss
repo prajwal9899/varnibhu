@@ -42,6 +42,7 @@ $white-color: #ffffff;
   justify-content: center;
   width: 100%;
   height: 100%;
+  margin-left: 100px;
   a {
     width: 100%;
     height: 100%;
@@ -80,16 +81,21 @@ $white-color: #ffffff;
   overflow: hidden;
   position: relative;
   // background: url("../assets/hero_banner_blur.png") no-repeat center;
-  background: url("../assets/ideogram.jpeg") no-repeat center;
+  background: url("../assets/ideogram.jpeg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
   background-size: cover;
   aspect-ratio: 1/0.3;
   .hero_banner {
     width: 80%;
     margin: 0 auto;
+    align-items: center;
     height: 100%;
     display: flex;
+    justify-content: center;
     img {
-      width: 100%;
+      width: 80%;
       aspect-ratio: 1/0;
       object-fit: fill;
     }
@@ -109,7 +115,8 @@ $white-color: #ffffff;
       letter-spacing: 0em;
       text-align: left;
       bottom: 30px;
-      left: 180px;
+      left: 25%;
+
       cursor: pointer;
       span {
         display: flex;
@@ -138,7 +145,8 @@ $white-color: #ffffff;
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  aspect-ratio: 1/0.14;
+  // aspect-ratio: 1/0.14;
+  height: 220px;
   #banner_video {
     position: absolute;
     right: 0;
@@ -150,7 +158,7 @@ $white-color: #ffffff;
   }
   .title {
     color: $white-color;
-    font-size: clamp(12px, 8vw, 190px);
+    font-size: clamp(12px, 8vw, 90px);
     color: #fff;
     font-family: Italianno;
     font-style: italic;
@@ -170,7 +178,7 @@ $white-color: #ffffff;
   .title {
     width: 100%;
     text-align: center;
-    font-size: 70px;
+    font-size: clamp(12px, 8vw, 70px);
     padding-top: 30px;
     // padding-bottom: 50px;
   }
@@ -483,6 +491,7 @@ $white-color: #ffffff;
       }
       h1 {
         padding: 20px 0px;
+        font-size: clamp(12px, 8vw, 70px);
       }
       .address {
         width: 40%;
@@ -594,10 +603,9 @@ footer {
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 1020px) {
   .nav > .nav-btn {
     display: inline-block;
-    position: absolute;
     right: 0px;
     top: 0px;
   }
@@ -627,10 +635,17 @@ footer {
     overflow-y: hidden;
     top: 50px;
     left: 0px;
+    margin-top: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 1.2s ease-in-out;
   }
   .nav > .nav-links > a {
     display: block;
     width: 100%;
+    font-size: 20px;
   }
   .nav > #nav-check:not(:checked) ~ .nav-links {
     height: 0px;
@@ -707,11 +722,73 @@ footer {
 
 @media screen and (max-width: 480px) {
   #hero {
-    aspect-ratio: 1/0.7;
+    aspect-ratio: 1/0.5;
+  }
+
+  #event_title {
+    height: 150px;
   }
   #contact {
+    height: auto;
     .contact_details {
       flex-direction: column;
     }
+  }
+  #contact .contact_details .contact_info {
+    margin-top: 30px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    .address {
+      width: 60%;
+    }
+  }
+
+  #contact .contact_details .contact_form {
+    margin-top: 30px;
+    width: 100%;
+    padding: 30px 0;
+    label {
+      margin-top: 30px;
+    }
+  }
+
+  #contact .contact_details .contact_form .row {
+    width: 90%;
+  }
+
+  .nav > .nav-header > .nav-title {
+    margin-left: 0px;
+  }
+
+  .nav > .nav-header > .nav-title a img {
+    height: 80%;
+    aspect-ratio: 3.1/1;
+    margin-top: 11px;
+  }
+
+  #hero {
+    .hero_banner {
+      width: 100%;
+      margin: 0 auto;
+      align-items: center;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      .book_btn span img {
+        width: 45px;
+        object-fit: contain;
+      }
+    }
+  }
+
+  #hero .hero_banner .book_btn {
+    // width: 200px;
+    // height: 50px;
+    display: none;
   }
 }
