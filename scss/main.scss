@@ -780,15 +780,19 @@ footer {
       display: flex;
       justify-content: center;
       .book_btn span img {
-        width: 45px;
+        width: 55px;
         object-fit: contain;
       }
     }
   }
 
   #hero .hero_banner .book_btn {
-    // width: 200px;
-    // height: 50px;
-    display: none;
+    left: 30%;
+    width: 150px;
+    height: 40px;
+    bottom: 4%;
+    span{
+      font-size: 10px;
+    }
   }
 }
